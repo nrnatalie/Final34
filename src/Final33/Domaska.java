@@ -56,12 +56,20 @@ package Final33;
 //код, который нужен, чтобы исправить несовершенство ранее написанного кода
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Domaska {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // В первой строке задано одно целое число n — количество слов в словаре.
+    System.out.println("Введите количество слов:");
+    int n = Integer.parseInt(br.readLine());
+    //В следующих n строках записаны слова и их определения, разделенные двоеточием и символом пробела.
+    Map<String, String> words = new HashMap<>();
   }
 
 }
