@@ -70,6 +70,17 @@ public class Domaska {
     int n = Integer.parseInt(br.readLine());
     //В следующих n строках записаны слова и их определения, разделенные двоеточием и символом пробела.
     Map<String, String> words = new HashMap<>();
+    words.put("Змея:", "язык программирования Python");
+    words.put("Баг:", "от англ. bug — жучок, клоп, ошибка в программе");
+    words.put("Конфа:", "конференция");
+    words.put("Костыль:", "код, который нужен, чтобы исправить несовершенство  написанного кода");
+    words.put("Бета:", "бета-версия, приложение на стадии публичного тестирования");
+    System.out.println("Введите слово:");
+    //String word = br.readLine();
+    String wordsKey = br.readLine();
+    if (words.containsKey(wordsKey)) {
+      System.out.println(words.get(wordsKey));
+    }
   }
 
 }
