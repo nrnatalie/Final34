@@ -19,7 +19,16 @@ public class Soda {
   private String food; // атрибут
 
   public Soda(String food) { // создали конструктор
+    this.food = food;
 
+  }
+
+  public String getFood() {
+    return food;
+  }
+
+  public void setFood(String food) {
+    this.food = food;
   }
 
 }
