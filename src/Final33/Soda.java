@@ -14,6 +14,12 @@ package Final33;
 // выведите её добавку
 // измените добавку
 // выведите новую добавку
-public class Domaska {
+public class Soda {
+
+  private String food; // атрибут
+
+  public Soda(String food) { // создали конструктор
+
+  }
 
 }
