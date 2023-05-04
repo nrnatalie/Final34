@@ -13,6 +13,9 @@ public class Main {
   }
 
 }
-
+//Exception in thread "main" java.lang.IllegalArgumentException: Ошибка 338
+//	at Final34.Triangle1.checkSides(Triangle1.java:50)
+//	at Final34.Triangle1.<init>(Triangle1.java:43)
+//	at Final34.Main.main(Main.java:6)
 
 
