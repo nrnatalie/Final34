@@ -15,22 +15,27 @@ public class Food {
 
   private String name;
 
-  // поле название пиццы  -это атрибут
-  public Food(String name) { // конструктор
+
+  public Food(String name) {
     this.name = name;
   }
 
-  // этот атрибут = аргументу
 
-  public String getName() {  //getter
+  public String getName() {
     return name;
   }
 
-  public void setName(String name) {  //setter
+  public void setName(String name) {
     this.name = name;
 
 
   }
 
+  public void eatFood() {
+    System.out.println(name + ":" + " ням- ням ");
+  }
 
 }
+
+
+
