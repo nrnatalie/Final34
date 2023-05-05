@@ -13,4 +13,24 @@ package Final35;
 //для негазированного - "скр"
 public class Food {
 
+  private String name;
+
+  // поле название пиццы  -это атрибут
+  public Food(String name) { // конструктор
+    this.name = name;
+  }
+
+  // этот атрибут = аргументу
+
+  public String getName() {  //getter
+    return name;
+  }
+
+  public void setName(String name) {  //setter
+    this.name = name;
+
+
+  }
+
+
 }
