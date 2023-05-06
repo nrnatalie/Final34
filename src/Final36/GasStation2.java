@@ -14,11 +14,22 @@ public class GasStation2 {
     String name = br.readLine();
     System.out.println("Сколько литров топлива вам нужно?");
     double quantity = Double.parseDouble(br.readLine());
+    System.out.println("Как будете оплачивать, картой или наличными?");
+    String paymentMethod = br.readLine();
+    boolean byCard = false;
+    if (paymentMethod.toLowerCase().contains("карт")) {
+      byCard = true;
+    }
     System.out.println("=== Ваш заказ ===");
     System.out.println("Заказчик: " + name);
     System.out.println("Количество топлива: " + quantity + " л");
     double total = quantity * 2;
     System.out.println("Стоимость заказа: " + total + " EUR");
+    if (byCard) {
+      System.out.println("Заказ должен быть оплачен картой");
+    } else {
+      System.out.println("Заказ должен быть оплачен наличными");
+    }
 
   }
 
