@@ -15,13 +15,13 @@ public class GasStation2 {
     System.out.println("Добро пожаловать! Как вас зовут?");
     // String name = br.readLine();
     String name = scanner.nextLine();
-    System.out.print("Введите количество заказов: ");
-    while (!scanner.hasNextInt()) {
-      String wrongLine = scanner.nextLine();
-      System.out.println("Неправильный формат целого числа:" + wrongLine);
-      System.out.print("Введите количество заказов: ");
-    }
-    int orders = scanner.nextInt();
+    // System.out.print("Введите количество заказов: ");
+    //while (!scanner.hasNextInt()) {
+    // String wrongLine = scanner.nextLine();
+    // System.out.println("Неправильный формат целого числа:" + wrongLine);
+    //System.out.print("Введите количество заказов: ");
+
+    int orders = readOrdersAmount(scanner);
     //int counter = 0; //у меня есть счетчик пока значение ноль  //1.вариант с while
     //while (counter < orders) {
     // for (командаПередЦиклом; условиеПовторения; командаПослеШага)
@@ -60,9 +60,26 @@ public class GasStation2 {
 
     }
 
+  }
 
+  private static int readOrdersAmount(Scanner scanner) { //передаем методу scanner (чтоб прочитал
+    // сразу из сканера
+    System.out.print("Введите количество заказов: ");
+    while (!scanner.hasNextInt()) {
+      String wrongLine = scanner.nextLine();
+      System.out.println("Неправильный формат целого числа: " + wrongLine);
+      System.out.print("Введите количество заказов: ");
+    }
+    int orders = scanner.nextInt();
+    scanner.nextLine(); // пропустить остаток строки, из которой мы прочитали число
+    // сканер не закрываем - мы продолжим им пользоваться, не мы создавали, не нам закрывать
+    return orders;
   }
 }
+
+
+
+
 
 
 
