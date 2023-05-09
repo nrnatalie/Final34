@@ -7,4 +7,11 @@ public class Woman extends Human {
     super(name);
   }
 
+  @Override
+  public void welcomeHuman() {
+    System.out.println("Я родилась! " + "Женщина по имени..." + getName());
+  }
+
 }
+
+

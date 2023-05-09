@@ -18,7 +18,14 @@ public class Human {
     this.name = name;
   }
 
+  public void welcomeHuman() {  // метод приветствие
+    System.out.println("Я родился! " + "Человек по имени..." + getName());
 
+  }
 }
+
+
+
+
 
 
