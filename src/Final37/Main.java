@@ -13,6 +13,21 @@ package Final37;
 
 //Метод "приветствие" класса "Женщина" должен выводить строку: "Я родилась!"{
 
+import Homework.Human;
+import Homework.Man;
+import Homework.Woman;
+
 public class Main {
 
+  public static void main(String[] args) {
+    Homework.Human human = new Human("Егор");
+    human.welcomeHuman();
+    Homework.Man man = new Man("Вася");
+    man.welcomeHuman();
+    Homework.Woman woman = new Woman("Елена");
+    woman.welcomeHuman();
+
+  }
 }
+
+
