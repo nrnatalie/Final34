@@ -31,15 +31,26 @@ public class Book {
   }
 
   @Override
-  public boolean equals(Object obj) { // метод equals переопределяет сравнение обьектов
-    if (this == obj) { // сравнивает обьект сам с собой
+  public boolean equals(Object obj) {
+    if (this == obj) {
       return true;
     }
     if (!(obj instanceof Book1 book1)) {
-      // если вдруг// наш обьект не является book1
-      return false; // то сразу возвращаем false
+
+      return false;
     }
-    return name.equals(book1.getName()) && author.equals(book1.getAuthor());// у
+    return name.equals(book1.getName()) && author.equals(book1.getAuthor());
+    // if (!(obj instanceof Book1 book2)) {
+
+    // return false; // то сразу возвращаем false
+    // }
+    // return name.equals(book2.getName()) && author.equals(book2.getAuthor());
+
+    //if (!(obj instanceof Book1 book3)) {
+
+    // return false;
+    // }
+    // return name.equals(book3.getName()) && author.equals(book3.getAuthor());
 
   }
 }
