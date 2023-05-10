@@ -50,7 +50,7 @@ public class Book {
 
     // return false;
     // }
-    // return name.equals(book3.getName()) && author.equals(book3.getAuthor());
+    // return name.equals(book3.getName()) && author.equals(book3.getAuthor());*
 
   }
 }
