@@ -44,5 +44,17 @@ public class ApartamentHouse {
       return "Вы снесли многоквартирный дом:" + getAddress() + getEntrances() + getAmount();
     }
 
+    @Override
+    public void House() {
+      System.out.println();
+    }
+
+    @Override
+    public void Demolish() {
+
+    }
+
+
   }
 }
+
