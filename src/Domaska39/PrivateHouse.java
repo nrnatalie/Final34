@@ -15,5 +15,15 @@ public class PrivateHouse {
       return "Вы снесли частный дом: " + getAddress();
     }
 
+    @Override
+    public void House() {
+      System.out.println();
+    }
+
+    @Override
+    public void Demolish() {
+    }
   }
+
 }
+
