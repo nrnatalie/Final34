@@ -18,4 +18,22 @@ package Domaska39;
 
 public class House {
 
+  public abstract class House1 {
+
+    private String address;
+
+    public House1(String address) {
+      this.address = address;
+    }
+
+    public String getAddress() {
+      return address;
+    }
+
+    public void setAddress(String address) {
+      this.address = address;
+    }
+
+
+  }
 }
