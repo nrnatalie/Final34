@@ -34,6 +34,15 @@ public class House {
       this.address = address;
     }
 
+    public void House() {
 
+    }
+
+    public void Demolish() {
+
+    }
   }
+
+
 }
+
