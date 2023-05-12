@@ -2,9 +2,9 @@ package Superman;
 
 public class CanRun implements Superman {
 
-  public String heigt;
+  public int heigt;
 
-  public CanRun(String heigt) {
+  public CanRun(int heigt) {
     this.heigt = heigt;
   }
 
