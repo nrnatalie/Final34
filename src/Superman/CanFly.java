@@ -14,6 +14,6 @@ public class CanFly implements Superman {
 
   @Override
   public void showSuperman() {
-    System.out.println("Color" + this.color);
+    System.out.println("Color: " + this.color);
   }
 }

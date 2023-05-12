@@ -14,7 +14,7 @@ public class CanSwim implements Superman {
 
   @Override
   public void showSuperman() {
-    System.out.println("sleep" + this.sleep);
+    System.out.println("sleep: " + this.sleep);
 
   }
 }

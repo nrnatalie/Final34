@@ -9,4 +9,19 @@ package Superman;
 // "Пингвин" и "Самолёт".
 public class Main {
 
+  public static void main(String[] args) {
+    CanSwim swim = new CanSwim("Утка");
+    swim.Swim();
+    // swim.showSuperman();
+    CanRun run = new CanRun("Пингвин");
+    run.Run();
+    // run.showSuperman();
+    CanFly fly = new CanFly("Самолёт");
+    fly.Fly();
+    //fly.showSuperman();
+  }
+
 }
+//Утка:Умеет плавать
+//Пингвин: Умеет бегать
+//Самолёт:Умеет летать

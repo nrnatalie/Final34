@@ -2,20 +2,20 @@ package Superman;
 
 public class CanRun implements Superman {
 
-  public int heigt;
+  public String heigt;
 
-  public CanRun(int heigt) {
+  public CanRun(String heigt) {
     this.heigt = heigt;
   }
 
   public void Run() {
-    System.out.println("Пингвин:" + "Умеет бегать");
+    System.out.println("Пингвин: " + "Умеет бегать");
 
   }
 
   @Override
   public void showSuperman() {
-    System.out.println("heigt" + this.heigt);
+    System.out.println("heigt: " + this.heigt);
 
   }
 
