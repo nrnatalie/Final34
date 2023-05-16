@@ -43,3 +43,29 @@ public class Book {
 
 
     }
+
+    @Override
+    public int compareTo(Book oder) {
+      //return this.amount - oder.amount;// для сравнения количества
+      return author.compareTo(oder.author); // для сранения авторов
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+      if (!(obj instanceof Book oder)) {
+        return false;
+      }
+      //return this.amount == oder.amount;// количество
+      return author.equals(oder.author);
+    }
+
+    @Override
+    public int hashCode() {
+      //return amount; //количество
+      return author.hashCode();
+    }
+
+
+  }
+}
+
