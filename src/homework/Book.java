@@ -33,5 +33,13 @@ public class Book {
       return amount;
     }
 
+    @Override
+    public String toString() {
+      return "Book{" +
+          "name='" + name + '\'' +
+          ", author='" + author + '\'' +
+          ", amount=" + amount +
+          '}';
 
-  }
+
+    }
