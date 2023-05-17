@@ -44,7 +44,7 @@ public class Book1 {
       if (!author.equals(oder.getAuthor())) {
 
       }
-      //return this.amount - oder.amount;// для сравнения количества
+      //return this.amount - oder.amount;// для сравнения количества.
       return name.compareTo(oder.getName()); // для сранения авторов
     }
 
