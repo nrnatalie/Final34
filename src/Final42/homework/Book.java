@@ -1,4 +1,4 @@
-package homework;
+package Final42.homework;
 
 
 //Задача 1
