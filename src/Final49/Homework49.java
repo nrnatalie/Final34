@@ -1,8 +1,10 @@
 package Final49;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Homework49 {
 
@@ -39,6 +41,32 @@ public class Homework49 {
           System.out.println();
         }
       }
+      //Задача 2
+//Прочитать с клавиатуры сначала количество чисел, а затем сами числа.
+//
+//Сохранить эти числа в множестве.
+//
+//Удалить из множества все нечётные числа.
+//
+//Вывести получившееся множество.
+//
+
+      Set<Integer> numb = new HashSet<>();
+      System.out.print("Введите количество чисел: ");
+      int number1 = scanner.nextInt();
+      scanner.nextLine();
+      for (int i = 0; i <= 20; i++) {
+        numb.add(i);
+
+      }
+      for (Integer res : numb) {
+        if (res % 2 == 0) {
+          System.out.print(res);
+        } else {
+          System.out.println();
+        }
+      }
+      System.out.println();
 
     }
   }
