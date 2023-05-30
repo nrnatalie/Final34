@@ -21,7 +21,7 @@ public class Homework49 {
 //Удалить из списка все чётные числа.
 //
 //Вывести получившийся список.
-//
+///
 
     Scanner scanner = new Scanner(System.in);
     System.out.print("Введите количество чисел: ");
