@@ -42,6 +42,41 @@ public class Domaska52 {
     Collections.sort(result);//отсортировали
     return result;//вернули
   }
+
+  /**
+   * Бинарный поиск элемента в отсортированном по убыванию списке
+   *
+   * @param numbers отсортированный по убыванию список
+   * @param target  число для поиска в списке
+   * @return индекс элемента в списке или -1, если элемент не найден
+   */
+
+  private static int indexOf(List<Integer> numbers, int target) {
+    int right = 0; // правая граница индексов( включая)
+    int left = numbers.size(); // левая граница индексов (не включая)
+    while (left > right - 1) {// пока расстояние меньше одного элемента
+      int mid = (left + right) / 2;// индекс среднего элемента
+      int midElem = numbers.get(mid); // сам средний элемент
+      if (midElem > target) {// середина больше чем то что нам нужно, то что нам нужно слева
+        right = mid + 1;// сдвигаем правую границу в лево
+
+      } else if (midElem < target) {//  середина меньше цели , цель справа
+        left = mid - 1;// сдвигаем левую границу вправо
+
+      } else { // не меньше и не больше
+        return mid;//досрочно нашли ответ
+      }
+
+    } //сузили границы поиска одного элемента (left, right]-значит проверяем индекс right
+    if (numbers.get(right) == target) {
+      return right;
+    }
+    // последний вариант не подошел, значит числа в списке нет
+    return -1;
+
+  }
 }
+
+
 
 
