@@ -8,7 +8,7 @@ import java.util.List;
 //Создайте класс PizzaComparator, в котором сортируйте пиццы
 // (см. класс Pizza из классной работы) следующим образом:
 //
-//по названию
+//по названию-
 //при одинаковых названиях - по размеру
 //при одинаковых размерах - по наличию сырного борта (сначала без него, потом с ним)
 public class Main {
@@ -29,7 +29,7 @@ public class Main {
     System.out.println("После другой сортировки:");
     System.out.println(pizzas);
 
-    pizzas.sort((o1, o2) -> Boolean.compare(o1.)) // НЕ ЗАХОДИТ isCheesyBorder
+    //pizzas.sort((o1, o2) -> Boolean.compare(o1.)) // НЕ ЗАХОДИТ isCheesyBorder
   }
 }
 
