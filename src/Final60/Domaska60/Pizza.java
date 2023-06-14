@@ -1,8 +1,7 @@
 package Final60.Domaska60;
 
-public class Pizza {
 
-  public class Pizza {
+public class Pizza {
 
     private final String title;
     private final int size;
@@ -38,4 +37,4 @@ public class Pizza {
   }
 
 
-}
+

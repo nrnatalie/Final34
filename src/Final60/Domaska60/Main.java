@@ -29,7 +29,7 @@ public class Main {
     System.out.println("После другой сортировки:");
     System.out.println(pizzas);
 
-    pizzas.sort((o1, o2) -> Boolean.compare(o1.))
+    pizzas.sort((o1, o2) -> Boolean.compare(o1.)) // НЕ ЗАХОДИТ isCheesyBorder
   }
 }
 
