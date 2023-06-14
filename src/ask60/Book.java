@@ -1,8 +1,7 @@
 package ask60;
 
-public class Book {
 
-  public class Book {
+public class Book {
 
     private final String author;
     private final String title;
