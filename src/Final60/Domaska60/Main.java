@@ -1,37 +1,28 @@
 package Final60.Domaska60;
 
-import Final59.Pizza;
+import Final43.homework42.Book;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-//Задача 1
-//Создайте класс PizzaComparator, в котором сортируйте пиццы
-// (см. класс Pizza из классной работы) следующим образом:
-//
-//по названию-
-//при одинаковых названиях - по размеру
-//при одинаковых размерах - по наличию сырного борта (сначала без него, потом с ним)
 public class Main {
 
   public static void main(String[] args) {
-    List<Final59.Pizza> pizzas = new ArrayList<>();
-    pizzas.add(new Final59.Pizza("Capricciosa", 24, 450, 7.5));
-    pizzas.add(new Final59.Pizza("Diavola", 32, 750, 11.5));
-    pizzas.add(new Final59.Pizza("Vesuvio", 28, 550, 9.5));
-    for (Pizza pizza : pizzas) {
-      System.out.println(pizza);
-    }
-    pizzas.sort((o1, o2) -> o1.getTitle().compareTo(o2.getTitle()));
+    List<Book> books = new ArrayList<>();
+    books.add(new Book("Пушкин", "Руслан и Людмила", 125));
+    books.add(new Book("Пушкин", "Дубровский", 126));
+    books.add(new Book("Лермонтов", "Мцыри", 127));
+    System.out.println(books);
+    Collections.sort(books);
+    System.out.println(books);
+
+    books.sort((o1, o2) -> o1.getTitle().compareTo(o2.getTitle()));
     System.out.println("После сортировки:");
-    System.out.println(pizzas);
+    System.out.println(books);
 
-    pizzas.sort((o1, o2) -> Integer.compare(o1.getDiameter(), o2.getDiameter()));
-    System.out.println("После другой сортировки:");
-    System.out.println(pizzas);
-
-    //pizzas.sort((o1, o2) -> Boolean.compare(o1.)) // НЕ ЗАХОДИТ isCheesyBorder
+    books.sort((o1, o2) -> o1.getAuthor().compareTo(o2.getAuthor()));
+    System.out.println("После другой сортровки:");
+    System.out.println(books);
   }
 }
-
-
 
